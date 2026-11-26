@@ -131,3 +131,29 @@ h1 {
     vertical-align: middle;
     margin-right: 10px;
 }
+
+@media screen and (max-width: 1200px) {
+    .grid {
+        gap: 20px;
+        padding: 30px;
+    }
+
+}
+
+@media screen and (max-width: 1024px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        padding: 0;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 15px;
+        padding: 10px;
+    }
+
+}

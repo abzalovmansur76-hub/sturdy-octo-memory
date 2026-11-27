@@ -12,6 +12,7 @@ body {
     min-height: 850px;
 }
 
+
 header {
     display: flex;
     justify-content: space-between;
@@ -64,6 +65,7 @@ nav a:hover {
     cursor: pointer;
 }
 
+
 main {
     display: flex;
     justify-content: space-between;
@@ -91,7 +93,6 @@ h1 b {
     margin-top: 35px;
 }
 
-
 .cta {
     background: #c58aff;
     color: #17121d;
@@ -109,7 +110,6 @@ h1 b {
     background: #d7b0ff;
     transform: translateY(-3px);
 }
-
 
 .photo {
     width: 60%;
@@ -136,6 +136,100 @@ h1 b {
     border-radius: 12px;
     vertical-align: middle;
     margin-right: 10px;
+}
+
+
+.works {
+    margin-top: 80px;
+}
+
+.works-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.works-title p {
+    color: #c58aff;
+    font-size: 14px;
+    letter-spacing: 3px;
+}
+
+.works-title h1 {
+    font-size: 48px;
+    margin: 15px 0;
+}
+
+.works-title h1 b {
+    color: #c58aff;
+}
+
+.works-title span {
+    color: #cccccc;
+    font-size: 17px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 20px 0;
+}
+
+.work-card {
+    background: #252527;
+    padding: 15px;
+}
+
+.work-card img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+}
+
+.work-card h2 {
+    font-size: 21px;
+    margin-top: 20px;
+}
+
+.work-card p {
+    color: #bbbbbb;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.work-card button {
+    background: #c58aff;
+    color: #17121d;
+    border: none;
+    border-radius: 30px;
+    padding: 12px 25px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+
+.works-bottom {
+    text-align: center;
+    margin-top: 70px;
+    padding: 45px 15px;
+    background: #252527;
+}
+
+.works-bottom h2 {
+    font-size: 30px;
+}
+
+.works-bottom p {
+    color: #cccccc;
+}
+
+.works-bottom button {
+    background: #c58aff;
+    border: none;
+    border-radius: 30px;
+    padding: 16px 35px;
+    margin-top: 15px;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 1200px) {
@@ -204,8 +298,17 @@ h1 b {
         font-size: 42px;
     }
 
-}
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        padding: 10px;
+    }
 
+    .work-card img {
+        height: 230px;
+    }
+
+}
 
 @media screen and (max-width: 768px) {
 
@@ -280,6 +383,41 @@ h1 b {
 
     .scroll {
         margin-top: 30px;
+    }
+
+    .works {
+        margin-top: 45px;
+    }
+
+    .works-title h1 {
+        font-size: 36px;
+    }
+
+    .works-title span {
+        font-size: 14px;
+    }
+
+    .grid {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        padding: 10px;
+    }
+
+    .work-card img {
+        height: auto;
+    }
+
+    .work-card h2 {
+        font-size: 19px;
+    }
+
+    .works-bottom {
+        margin-top: 40px;
+        padding: 30px 15px;
+    }
+
+    .works-bottom h2 {
+        font-size: 24px;
     }
 
 }

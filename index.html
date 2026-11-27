@@ -4,136 +4,337 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WD — Наши работы</title>
+    <title>WD — Кухонная мебель</title>
     <link rel="stylesheet" href="styel.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </head>
 
 <body>
 
-    <div class="screen">
-        <div class="screen">
+<header class="header">
 
-            <header>
+    <a href="#home" class="logo">
+        <b>WD</b>
+        <span>Кухонная<br>мебель</span>
+    </a>
 
-                <a class="logo" href="index.html">
-                    <b>WD</b>
-                    <span>Кухонная<br>мебель</span>
-                </a>
+    <button class="menu-toggle" id="menuToggle">☰</button>
 
-                <nav>
-                    <a href="index.html">Главная</a>
-                    <a href="#">Преимущества</a>
-                    <a href="#">Услуги</a>
-                    <a href="works.html">Наши работы</a>
-                    <a href="#">Контакты</a>
-                </nav>
+    <nav id="nav">
+        <a href="#home">Главная</a>
+        <a href="#advantages">Преимущества</a>
+        <a href="#services">Услуги</a>
+        <a href="#works">Наши работы</a>
+        <a href="#contacts">Контакты</a>
+    </nav>
 
-                <div class="contact">
-                    <strong>8 (708) 383-55-99</strong>
-                    <br>
-                    <button>Контакты</button>
-                </div>
+    <div class="contact">
+        <strong>8 (708) 383-55-99</strong>
+        <a href="#contacts">Связаться с нами</a>
+    </div>
 
-            </header>
+</header>
 
-            <main>
+<main>
 
-                <div class="content">
+<section class="section hero" id="home">
 
-                    <h1>
-                        Изготовление<br>
-                        <b>кухонной мебели</b><br>
-                        на заказ
-                    </h1>
+    <div class="hero-content">
 
-                    <p>
-                        Позвони сейчас и получи скидку<br>
-                        или бесплатную установку
-                    </p>
+        <p class="eyebrow">WD — КУХОННАЯ МЕБЕЛЬ</p>
 
-                    <button class="cta">Узнать стоимость</button>
+        <h1>
+            Изготовление<br>
+            <b>кухонной мебели</b><br>
+            на заказ
+        </h1>
 
-                </div>
+        <p class="hero-description">
+            Создаём современные кухни, которые идеально
+            подходят вашему дому. Индивидуальный дизайн
+            и качественные материалы.
+        </p>
 
-                <div class="photo">
-                    <img src="123.jpeg" alt="Кухонная мебель">
-                </div>
+        <a href="#prices" class="button">Узнать стоимость</a>
 
-            </main>
+    </div>
 
+    <div class="hero-photo">
+        <img src="123.jpeg" alt="Современная кухня">
+    </div>
 
-            <section class="works">
+</section>
 
-                <div class="works-title">
-                    <p>НАШИ ПРОЕКТЫ</p>
+<section class="section advantages" id="advantages">
 
-                    <h1>Наши <b>работы</b></h1>
+    <div class="section-title">
+        <p class="eyebrow">ПОЧЕМУ WD</p>
+        <h2>Наши <b>преимущества</b></h2>
+        <p>Мы заботимся о каждой детали вашей будущей кухни.</p>
+    </div>
 
-                    <span>
-                        Создаём кухни, которые сочетают
-                        современный дизайн и удобство.
-                    </span>
-                </div>
+    <div class="advantages-grid">
 
-                <div class="grid">
+        <div class="advantage-card">
+            <div class="advantage-number">01</div>
+            <h3>Индивидуальный дизайн</h3>
+            <p>Проектируем мебель с учётом ваших пожеланий и размеров помещения.</p>
+        </div>
 
-                    <div class="work-card">
-                        <img src="1.jpeg" alt="Светлая кухня">
+        <div class="advantage-card">
+            <div class="advantage-number">02</div>
+            <h3>Качественные материалы</h3>
+            <p>Используем надёжные материалы и современные комплектующие.</p>
+        </div>
 
-                        <h2>Кухня в современном стиле</h2>
+        <div class="advantage-card">
+            <div class="advantage-number">03</div>
+            <h3>Точная установка</h3>
+            <p>Аккуратно собираем и устанавливаем мебель на вашем объекте.</p>
+        </div>
 
-                        <p>
-                            Минимализм, светлые оттенки
-                            и натуральное дерево.
-                        </p>
+        <div class="advantage-card">
+            <div class="advantage-number">04</div>
+            <h3>Современный стиль</h3>
+            <p>Создаём кухни, которые выглядят актуально и остаются удобными.</p>
+        </div>
 
-                        <button>Подробнее</button>
-                    </div>
+    </div>
 
-                    <div class="work-card">
-                        <img src="2.jpeg" alt="Тёмная кухня">
+</section>
 
-                        <h2>Кухня в тёмных тонах</h2>
+<section class="section services" id="services">
 
-                        <p>
-                            Стильный дизайн с деревянными
-                            фасадами.
-                        </p>
+    <div class="section-title">
+        <p class="eyebrow">ЧТО МЫ ДЕЛАЕМ</p>
+        <h2>Наши <b>услуги</b></h2>
+        <p>Полный процесс создания вашей кухни.</p>
+    </div>
 
-                        <button>Подробнее</button>
-                    </div>
+    <div class="services-grid">
 
-                    <div class="work-card">
-                        <img src="3.jpeg" alt="Бежевая кухня">
+        <div class="service-card">
+            <span>01 / 04</span>
+            <h3>Изготовление кухонь</h3>
+            <p>Производство кухонной мебели по индивидуальному проекту.</p>
+        </div>
 
-                        <h2>Кухня в стиле минимализм</h2>
+        <div class="service-card">
+            <span>02 / 04</span>
+            <h3>Замер помещения</h3>
+            <p>Определение точных размеров для будущей мебели.</p>
+        </div>
 
-                        <p>
-                            Современные фасады и удобное
-                            пространство.
-                        </p>
+        <div class="service-card">
+            <span>03 / 04</span>
+            <h3>Дизайн-проект</h3>
+            <p>Подбор материалов, цвета, фасадов и расположения мебели.</p>
+        </div>
 
-                        <button>Подробнее</button>
+        <div class="service-card">
+            <span>04 / 04</span>
+            <h3>Установка мебели</h3>
+            <p>Сборка и монтаж готовой кухонной мебели.</p>
+        </div>
 
-                    </div>
+    </div>
 
-                </div>
+</section>
 
-                <div class="works-bottom">
+<section class="section works" id="works">
 
-                    <h2>Хотите такую же кухню?</h2>
+    <div class="section-title">
+        <p class="eyebrow">НАШИ ПРОЕКТЫ</p>
+        <h2>Наши <b>работы</b></h2>
+        <p>Посмотрите примеры наших кухонь.</p>
+    </div>
 
-                    <p>
-                        Создадим мебель специально для вашего дома.
-                    </p>
+    <div class="works-grid">
 
-                    <button>Заказать кухню</button>
+        <article class="work-card">
 
-                </div>
+            <img src="1.jpeg" alt="Светлая кухня">
 
-            </section>
+            <div class="work-info">
+                <span>ПРОЕКТ №01</span>
+                <h3>Кухня в современном стиле</h3>
+                <p>Минимализм, светлые оттенки и натуральное дерево.</p>
+
+                <button class="details-button" onclick="showKitchen(0)">
+                    Подробнее ↗
+                </button>
+            </div>
+
+        </article>
+
+        <article class="work-card">
+
+            <img src="2.jpeg" alt="Тёмная кухня">
+
+            <div class="work-info">
+                <span>ПРОЕКТ №02</span>
+                <h3>Кухня в тёмных тонах</h3>
+                <p>Стильный дизайн с деревянными фасадами.</p>
+
+                <button class="details-button" onclick="showKitchen(1)">
+                    Подробнее ↗
+                </button>
+            </div>
+
+        </article>
+
+        <article class="work-card">
+
+            <img src="3.jpeg" alt="Кухня минимализм">
+
+            <div class="work-info">
+                <span>ПРОЕКТ №03</span>
+                <h3>Кухня в стиле минимализм</h3>
+                <p>Современные фасады и удобное пространство.</p>
+
+                <button class="details-button" onclick="showKitchen(2)">
+                    Подробнее ↗
+                </button>
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+<section class="section kitchen-detail" id="details">
+
+    <div class="detail-image">
+        <img id="detailImage" src="1.jpeg" alt="Кухня">
+    </div>
+
+    <div class="detail-content">
+
+        <p class="eyebrow" id="detailNumber">ПРОЕКТ №01</p>
+
+        <h2 id="detailTitle">Кухня в современном стиле</h2>
+
+        <p id="detailDescription">
+            Современная кухня с индивидуальным дизайном.
+        </p>
+
+        <div class="detail-features">
+
+            <div>
+                <span>01</span>
+                <p id="feature1">Светлые фасады</p>
+            </div>
+
+            <div>
+                <span>02</span>
+                <p id="feature2">Натуральная текстура дерева</p>
+            </div>
+
+            <div>
+                <span>03</span>
+                <p id="feature3">Удобная система хранения</p>
+            </div>
+
+        </div>
+
+        <a href="#contacts" class="button">
+            Заказать такую кухню
+        </a>
+
+    </div>
+
+</section>
+
+<section class="section prices" id="prices">
+
+    <div class="section-title">
+        <p class="eyebrow">НАШИ ПРЕДЛОЖЕНИЯ</p>
+        <h2>Стоимость <b>услуг</b></h2>
+        <p>Стоимость рассчитывается индивидуально под каждый проект.</p>
+    </div>
+
+    <div class="price-grid">
+
+        <div class="price-card">
+            <span>01</span>
+            <h3>Замер помещения</h3>
+            <p>Определение размеров и особенностей помещения.</p>
+            <strong>По запросу</strong>
+        </div>
+
+        <div class="price-card featured">
+            <span>02</span>
+            <h3>Кухня на заказ</h3>
+            <p>Индивидуальное изготовление кухонной мебели.</p>
+            <strong>По запросу</strong>
+        </div>
+
+        <div class="price-card">
+            <span>03</span>
+            <h3>Установка мебели</h3>
+            <p>Сборка и монтаж готовой кухни.</p>
+            <strong>По запросу</strong>
+        </div>
+
+    </div>
+
+    <div class="price-note">
+        <p>Хотите узнать точную стоимость?</p>
+        <a href="#contacts" class="button">Рассчитать стоимость</a>
+    </div>
+
+</section>
+
+<section class="section contacts" id="contacts">
+
+    <div class="contacts-content">
+
+        <p class="eyebrow">МЫ НА СВЯЗИ</p>
+
+        <h2>Создадим кухню <b>вашей мечты</b></h2>
+
+        <p>Свяжитесь с нами и расскажите о своей будущей кухне.</p>
+
+        <div class="contact-info">
+
+            <div>
+                <span>ТЕЛЕФОН</span>
+                <a href="tel:+77083835599">8 (708) 383-55-99</a>
+            </div>
+
+            <div>
+                <span>КОМПАНИЯ</span>
+                <strong>WD — Кухонная мебель</strong>
+            </div>
+
+            <div>
+                <span>ГОРОД</span>
+                <strong>Актобе</strong>
+            </div>
+
+        </div>
+
+        <a href="tel:+77083835599" class="button">Позвонить нам</a>
+
+    </div>
+
+</section>
+
+</main>
+
+<footer class="footer">
+
+    <a href="#home" class="logo">
+        <b>WD</b>
+        <span>Кухонная<br>мебель</span>
+    </a>
+
+    <p>© 2026 WD. Кухонная мебель на заказ.</p>
+
+    <a href="#home">Наверх ↑</a>
+
+</footer>
 
 </body>
-
 </html>
